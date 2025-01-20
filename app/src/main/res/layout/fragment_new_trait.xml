@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.fragment.NewTraitFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="642dp"
+        android:background="@drawable/custom_scrollbar"
+        android:clipChildren="false"
+        android:clipToOutline="true"
+        android:clipToPadding="false"
+        android:outlineProvider="background"
+        android:scrollbarStyle="insideOverlay"
+        android:visibility="visible"
+        style="@style/NoScrollbars">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/circle3">
+
+            </FrameLayout>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainerView"
+                android:name="com.enka.kolbaskavlavashe.activity.fragment.ChooseAvatarFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/circle2"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp">
+
+                    <EditText
+                        android:id="@+id/editTextText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:hint="Название привычки"
+                        android:inputType="text"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#E6E3E1" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/circle1"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="1. Дай название"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/layout2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingStart="8dp"
+                        android:paddingTop="25dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="16dp">
+
+                        <LinearLayout
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:id="@+id/healthCategoryFrameLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="16dp"
+                                android:paddingTop="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <FrameLayout
+                                        android:layout_width="58dp"
+                                        android:layout_height="58dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/circle1">
+
+                                        <ImageView
+                                            android:id="@+id/imageView4"
+                                            android:layout_width="38dp"
+                                            android:layout_height="38dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/healthicon" />
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:id="@+id/textView21"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="Здоровье"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/educationCategoryFrameLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </FrameLayout>
+
+                                    <FrameLayout
+                                        android:layout_width="58dp"
+                                        android:layout_height="58dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/circle1">
+
+                                        <ImageView
+                                            android:id="@+id/imageView7"
+                                            android:layout_width="38dp"
+                                            android:layout_height="38dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/studyicon" />
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:id="@+id/textView21"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="Учёба"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:id="@+id/hygieneCategoryFrameLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="16dp"
+                                android:paddingTop="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <FrameLayout
+                                        android:layout_width="58dp"
+                                        android:layout_height="58dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/circle1">
+
+                                        <ImageView
+                                            android:id="@+id/imageView5"
+                                            android:layout_width="38dp"
+                                            android:layout_height="38dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/hygieneicon" />
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:id="@+id/textView21"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="Гигиена"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/houseCategoryFrameLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <FrameLayout
+                                        android:layout_width="58dp"
+                                        android:layout_height="58dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/circle1">
+
+                                        <ImageView
+                                            android:id="@+id/imageView8"
+                                            android:layout_width="38dp"
+                                            android:layout_height="38dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/houseicon" />
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:id="@+id/textView21"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="Дом"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:id="@+id/financeCategoryFrameLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="16dp"
+                                android:paddingTop="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <FrameLayout
+                                        android:layout_width="58dp"
+                                        android:layout_height="58dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/circle1">
+
+                                        <ImageView
+                                            android:id="@+id/imageView6"
+                                            android:layout_width="38dp"
+                                            android:layout_height="38dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/financeicon" />
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:id="@+id/textView21"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="Финансы"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/hobbyCategoryFrameLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <FrameLayout
+                                        android:layout_width="58dp"
+                                        android:layout_height="58dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/circle1">
+
+                                        <ImageView
+                                            android:id="@+id/imageView9"
+                                            android:layout_width="38dp"
+                                            android:layout_height="38dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/hobbyicon" />
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:id="@+id/textView21"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="Хобби"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/circle1"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="2. Выбери категорию"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/layout2"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="Частые"
+                            android:textColor="#Ffffff"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/layout1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp">
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="5dp"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="Каждые"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="46dp"
+                                android:layout_marginRight="5dp">
+
+                                <EditText
+                                    android:id="@+id/editTextText2"
+                                    android:layout_width="30dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/layout5"
+                                    android:ems="1"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:gravity="center"
+                                    android:hint="2"
+                                    android:inputType="text"
+                                    android:textColor="#FFFFFF"
+                                    android:textColorHint="#E6E3E1" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="дня"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical">
+
+                                <FrameLayout
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:layout_gravity="right"
+                                    android:background="@drawable/circle3">
+
+                                    <ImageView
+                                        android:id="@+id/imageView10"
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_gravity="center"
+                                        android:alpha="0"
+                                        android:src="@drawable/completeicon" />
+                                </FrameLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/layout1"
+                            android:orientation="vertical"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="5dp"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:text="Дни недели"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="18sp" />
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical">
+
+                                    <FrameLayout
+                                        android:layout_width="28dp"
+                                        android:layout_height="28dp"
+                                        android:layout_gravity="right"
+                                        android:background="@drawable/circle3">
+
+                                        <ImageView
+                                            android:id="@+id/imageView11"
+                                            android:layout_width="24dp"
+                                            android:layout_height="24dp"
+                                            android:layout_gravity="center"
+                                            android:alpha="0"
+                                            android:src="@drawable/completeicon" />
+                                    </FrameLayout>
+                                </FrameLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <FrameLayout
+                                    android:id="@+id/mondayNewTraitFrameLayout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingRight="8dp"
+                                    android:paddingBottom="4dp">
+
+                                    <TextView
+                                        android:id="@+id/textView12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="пн"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/tuesdayNewTraitFrameLayout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingRight="8dp"
+                                    android:paddingBottom="4dp">
+
+                                    <TextView
+                                        android:id="@+id/textView12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="вт"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/wednesdayNewTraitFrameLayout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingRight="8dp"
+                                    android:paddingBottom="4dp">
+
+                                    <TextView
+                                        android:id="@+id/textView12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="ср"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/thursdayNewTraitFrameLayout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingRight="8dp"
+                                    android:paddingBottom="4dp">
+
+                                    <TextView
+                                        android:id="@+id/textView12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="чт"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/fridayNewTraitFrameLayout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingRight="8dp"
+                                    android:paddingBottom="4dp">
+
+                                    <TextView
+                                        android:id="@+id/textView12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="пт"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/saturdayNewTraitFrameLayout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingRight="8dp"
+                                    android:paddingBottom="4dp">
+
+                                    <TextView
+                                        android:id="@+id/textView12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="сб"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/sundayNewTraitFrameLayout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingRight="8dp"
+                                    android:paddingBottom="4dp">
+
+                                    <TextView
+                                        android:id="@+id/textView12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="вс"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp" />
+                                </FrameLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="Редкие"
+                            android:textColor="#FfFfFf"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/layout1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp">
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="5dp"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="Каждые"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="46dp"
+                                android:layout_marginRight="5dp">
+
+                                <EditText
+                                    android:id="@+id/editTextText2"
+                                    android:layout_width="30dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/layout5"
+                                    android:ems="1"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:gravity="center"
+                                    android:hint="2"
+                                    android:inputType="text"
+                                    android:textColor="#FFFFFF"
+                                    android:textColorHint="#E6E3E1" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="недели"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical">
+
+                                <FrameLayout
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:layout_gravity="right"
+                                    android:background="@drawable/circle3">
+
+                                    <ImageView
+                                        android:id="@+id/imageView12"
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_gravity="center"
+                                        android:alpha="0"
+                                        android:src="@drawable/completeicon" />
+                                </FrameLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/layout1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp">
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="5dp"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="Каждые"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="46dp"
+                                android:layout_marginRight="5dp">
+
+                                <EditText
+                                    android:id="@+id/editTextText2"
+                                    android:layout_width="30dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/layout5"
+                                    android:ems="1"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:gravity="center"
+                                    android:hint="3"
+                                    android:inputType="text"
+                                    android:textColor="#FFFFFF"
+                                    android:textColorHint="#E6E3E1" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="месяца"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical">
+
+                                <FrameLayout
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:layout_gravity="right"
+                                    android:background="@drawable/circle3">
+
+                                    <ImageView
+                                        android:id="@+id/imageView13"
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_gravity="center"
+                                        android:alpha="0"
+                                        android:src="@drawable/completeicon" />
+                                </FrameLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/layout1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp">
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="5dp"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="Каждые"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="46dp"
+                                android:layout_marginRight="5dp">
+
+                                <EditText
+                                    android:id="@+id/editTextText2"
+                                    android:layout_width="30dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/layout5"
+                                    android:ems="1"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:gravity="center"
+                                    android:hint="4"
+                                    android:inputType="text"
+                                    android:textColor="#FFFFFF"
+                                    android:textColorHint="#E6E3E1" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="года"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical">
+
+                                <FrameLayout
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:layout_gravity="right"
+                                    android:background="@drawable/circle3">
+
+                                    <ImageView
+                                        android:id="@+id/imageView14"
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_gravity="center"
+                                        android:alpha="0"
+                                        android:src="@drawable/completeicon" />
+                                </FrameLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/circle1"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="3. Укажи частоту"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:background="@drawable/layout2"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="18dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <FrameLayout
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/circle1">
+
+                                <ImageView
+                                    android:id="@+id/imageView16"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/morningicon" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/textView45"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="Утро"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <FrameLayout
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="@drawable/circle1">
+
+                                <ImageView
+                                    android:id="@+id/imageView18"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/dayicon" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/textView46"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="День"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <FrameLayout
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="@drawable/circle1">
+
+                                <ImageView
+                                    android:id="@+id/imageView19"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/eveningicon" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/textView47"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="Вечер"
+                                android:textColor="#FfFfFf"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/circle1"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="4. Определи время суток"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/circle3">
+
+                    <ImageView
+                        android:id="@+id/imageView20"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/settings2icon" />
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/circle1"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="5. Выбери награду"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/circle2"
+                            android:clipToPadding="false">
+
+                            <FrameLayout
+                                android:id="@+id/seekBarFiller"
+                                android:layout_width="201dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/circle1">
+
+                            </FrameLayout>
+
+                            <SeekBar
+                                android:id="@+id/starsSeekBar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:max="50"
+                                android:min="4"
+                                android:progress="27"
+                                android:progressBackgroundTint="#D1C8B8"
+                                android:progressTint="#BAA388"
+                                android:thumb="@drawable/seekbarstar"
+                                android:thumbOffset="15dp" />
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/starsRewardFrameLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle2"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <TextView
+                            android:id="@+id/starsRewardTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="27"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

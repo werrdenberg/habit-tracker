@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- состояние выбранной кнопки -->
+    <item android:drawable="@drawable/completeicon" android:state_checked="true" />
+    <!-- состояние обычной кнопки -->
+    <item android:drawable="@drawable/transparent" />
+</selector>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_prizes"
+        android:icon="@drawable/present"
+        android:title="Призы" />
+
+    <item
+        android:id="@+id/nav_statistics"
+        android:icon="@drawable/statistic"
+        android:title="Статистика"/>
+
+    <item
+        android:id="@+id/nav_nothing"
+        android:icon="@drawable/transparent"
+        android:title=""
+        />
+
+    <item
+        android:id="@+id/nav_habits"
+        android:icon="@drawable/goals"
+        android:title="Привычки" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/settings"
+        android:title="Настройки" />
+
+</menu>

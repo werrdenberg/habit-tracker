@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:scrollbars="none"
+    tools:context=".activity.fragment.StatisticsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="642dp"
+        android:background="@drawable/custom_scrollbar"
+        android:clipChildren="false"
+        android:clipToOutline="true"
+        android:clipToPadding="false"
+        android:outlineProvider="background"
+        android:scrollbarStyle="insideOverlay"
+        android:visibility="visible"
+        style="@style/NoScrollbars">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout2"
+                    android:paddingLeft="26dp"
+                    android:paddingTop="26dp"
+                    android:paddingRight="26dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/citationTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:lineSpacingExtra="0sp"
+                        android:lineSpacingMultiplier="0.7"
+                        android:text="«Каждая звёздочка — это шаг к твоей мечте. Собери своё небо и свети ярче!»"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18dp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/circle1">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Твоя мотивация на сегодня:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout1"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="76dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="27dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/layout3"/>
+
+                        <FrameLayout
+                            android:layout_width="50dp"
+                            android:layout_height="27dp"
+                            android:layout_gravity="start|center_vertical"
+                            android:background="@drawable/circle2">
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_vertical|end"
+                            android:background="@drawable/circle3">
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/starcoin" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"></LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/layout2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <LinearLayout
+                            android:id="@+id/mondayStatisticsLinearLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">
+
+                            <TextView
+                                android:id="@+id/mondayStatisticsDayTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="20"
+                                android:textColor="#FFFFFF"
+                                android:textSize="27dp" />
+
+                            <TextView
+                                android:id="@+id/mondayStatisticsDayOfWeekTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:text="пн"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tuesdayStatisticsLinearLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">
+
+                            <TextView
+                                android:id="@+id/tuesdayStatisticsDayTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_horizontal"
+                                android:text="21"
+                                android:textColor="#FFFFFF"
+                                android:textSize="27dp" />
+
+                            <TextView
+                                android:id="@+id/tuesdayStatisticsDayOfWeekTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:text="вт"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/wednesdayStatisticsLinearLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">
+
+                            <TextView
+                                android:id="@+id/wednesdayStatisticsDayTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_horizontal"
+                                android:text="22"
+                                android:textColor="#FFFFFF"
+                                android:textSize="27dp" />
+
+                            <TextView
+                                android:id="@+id/wednesStatisticsDayOfWeekTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:text="ср"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/thursdayStatisticsLinearLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">
+
+                            <TextView
+                                android:id="@+id/thursdayStatisticsDayTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_horizontal"
+                                android:text="23"
+                                android:textColor="#FFFFFF"
+                                android:textSize="27dp" />
+
+                            <TextView
+                                android:id="@+id/thursdayStatisticsDayOfWeekTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:text="чт"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/fridayStatisticsLinearLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">
+
+                            <TextView
+                                android:id="@+id/fridayStatisticsDayTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_horizontal"
+                                android:text="24"
+                                android:textColor="#FFFFFF"
+                                android:textSize="27dp" />
+
+                            <TextView
+                                android:id="@+id/fridayStatisticsDayOfWeekTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:text="пт"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/saturdayStatisticsLinearLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">
+
+                            <TextView
+                                android:id="@+id/saturdayStatisticsDayTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_horizontal"
+                                android:text="25"
+                                android:textColor="#FFFFFF"
+                                android:textSize="27dp" />
+
+                            <TextView
+                                android:id="@+id/saturdayDayOfWeekTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:text="сб"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/sundayStatisticsLinearLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">
+
+                            <TextView
+                                android:id="@+id/sundayStatisticsDayTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_horizontal"
+                                android:text="26"
+                                android:textColor="#FFFFFF"
+                                android:textSize="27dp" />
+
+                            <TextView
+                                android:id="@+id/sundayStatisticsDayOfWeekTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:text="вс"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="180dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/layout1">
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/layout1">
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/circle2">
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="Месяц"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/circle2">
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="Неделя"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout2"
+                    android:paddingLeft="26dp"
+                    android:paddingTop="26dp"
+                    android:paddingRight="26dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/factTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:lineSpacingExtra="0sp"
+                        android:lineSpacingMultiplier="0.7"
+                        android:text="Даже 1% улучшения каждый день приведёт к тому, что за год ты станешь лучше на 37%. Всё начинается с небольших шагов!"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18dp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/circle1">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Знаешь ли ты?"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/layout1">
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
